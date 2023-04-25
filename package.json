@@ -1,7 +1,10 @@
 {
   "name": "uni-preset-vue",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
+    "start": "pnpm run dev:mp-weixin",
+    "new": "node ./scripts/cli/news/news",
     "dev:app": "uni -p app",
     "dev:app-android": "uni -p app-android",
     "dev:app-ios": "uni -p app-ios",
@@ -55,6 +58,7 @@
     "@dcloudio/uni-mp-toutiao": "3.0.0-alpha-3070720230316001",
     "@dcloudio/uni-mp-weixin": "3.0.0-alpha-3070720230316001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-alpha-3070720230316001",
+    "prompts": "^2.4.2",
     "vue": "^3.2.45",
     "vue-i18n": "^9.1.9"
   },

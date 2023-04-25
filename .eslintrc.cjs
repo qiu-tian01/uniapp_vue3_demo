@@ -10,6 +10,10 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
   ],
+  globals: {
+    uni: true,
+    wx: true
+  },
   overrides: [],
   parser: "vue-eslint-parser",
   parserOptions: {
