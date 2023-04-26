@@ -5,6 +5,9 @@ import { exec, execSync } from "child_process"
 import { error } from "console"
 
 const __dirName = path.resolve()
+const pageJsonPath = path.join(__dirName, "src/pages.json")
+const projectPath = path.join(__dirName, "src/pages")
+const packagesList = ["pages", "pageA"]
 const template = `
 <template>
   <div></div>
@@ -14,12 +17,6 @@ const template = `
 
 <style></style> 
 `
-
-console.log(`dirpath`, __dirName)
-
-const pageJsonPath = path.join(__dirName, "src/pages.json")
-const projectPath = path.join(__dirName, "src/pages")
-const packagesList = ["pages"]
 
 async function createPath() {
   const appName = fs.readdirSync(projectPath)

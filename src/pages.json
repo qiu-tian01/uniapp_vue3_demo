@@ -1,8 +1,25 @@
 {
   "pages": [{ "path": "pages/index/index", "style": { "navigationBarTitleText": "uni-app" } }],
+  "subPackages": [
+    {
+      "root": "pageA",
+      "pages": [
+        {
+          "path": "index/index",
+          "style": { "navigationBarTitleText": "uni-app" }
+        }
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/index/index": {
+      "network": "all",
+      "packages": ["pageA"]
+    }
+  },
   "globalStyle": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "demo",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   }
