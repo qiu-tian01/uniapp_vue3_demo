@@ -1,8 +1,6 @@
 import path from "path"
 import fs from "fs"
 import prompts from "prompts"
-import { exec, execSync } from "child_process"
-import { error } from "console"
 
 const __dirName = path.resolve()
 const pageJsonPath = path.join(__dirName, "src/pages.json")
@@ -66,7 +64,7 @@ function handleTemplate(data) {
       style: { navigationBarTitleText: "uni-app" }
     })
     const json = JSON.stringify(file)
-    fs.writeFile(pageJsonPath, json, (err, data) => {
+    fs.writeFile(pageJsonPath, json, (err) => {
       if (err) {
         console.error(`[write pages file error]:`, err)
         return
