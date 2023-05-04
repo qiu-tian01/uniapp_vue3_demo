@@ -14,7 +14,10 @@
       "postcss": true,
       "minified": true
     },
-    "usingComponents": true
+    "usingComponents": true,
+    "optimization": {
+      "subPackages": true
+    }
   },
   "quickapp": {},
   "mp-alipay": {

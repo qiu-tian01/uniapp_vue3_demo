@@ -1,7 +1,6 @@
 {
   "name": "uni-preset-vue",
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "start": "pnpm run dev:mp-weixin",
     "new": "node ./scripts/cli/news/news",
