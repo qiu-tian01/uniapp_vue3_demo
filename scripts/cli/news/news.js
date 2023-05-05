@@ -1,6 +1,6 @@
-import path from "path"
-import fs from "fs"
-import prompts from "prompts"
+const path = require("path")
+const fs = require("fs")
+const prompts = require("prompts")
 
 const __dirName = path.resolve()
 const pageJsonPath = path.join(__dirName, "src/pages.json")

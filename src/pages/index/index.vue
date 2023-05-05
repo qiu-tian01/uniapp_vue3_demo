@@ -1,7 +1,27 @@
 <template>
-  <div>pages/index/index</div>
+  <div>uniapp+vue3+ts首页</div>
+  <div class="button" @click="navigateTo('/pages/vue/vue')">vue页面</div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const navigateTo = (url: string) => {
+  uni.navigateTo({
+    url: url
+  })
+}
+</script>
 
-<style></style>
+<style>
+.button {
+  width: 300px;
+  height: 50px;
+  background: #07c160;
+  color: #fff;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 6px;
+}
+</style>
