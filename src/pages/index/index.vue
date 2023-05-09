@@ -1,6 +1,7 @@
 <template>
   <div>uniapp+vue3+ts首页</div>
   <div class="button" @click="navigateTo('/pages/vue/vue')">vue页面</div>
+  <div class="button" @click="navigateTo('/pages/ts/ts')">ts页面</div>
 </template>
 
 <script setup lang="ts">

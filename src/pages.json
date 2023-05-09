@@ -1,7 +1,11 @@
 {
   "pages": [
-    { "path": "pages/index/index", "style": { "navigationBarTitleText": "uni-app" } },
-    { "path": "pages/vue/vue", "style": { "navigationBarTitleText": "uni-app" } }
+    {
+      "path": "pages/index/index",
+      "style": { "navigationBarTitleText": "uni-app", "navigationBarTextStyle": "black" }
+    },
+    { "path": "pages/vue/vue", "style": { "navigationBarTitleText": "uni-app" } },
+    { "path": "pages/ts/ts", "style": { "navigationBarTitleText": "uni-app" } }
   ],
   "subPackages": [
     {
@@ -11,7 +15,7 @@
   ],
   "preloadRule": { "pages/index/index": { "network": "all", "packages": ["pageA"] } },
   "globalStyle": {
-    "navigationBarTextStyle": "white",
+    "navigationBarTextStyle": "black",
     "navigationBarTitleText": "demo",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
