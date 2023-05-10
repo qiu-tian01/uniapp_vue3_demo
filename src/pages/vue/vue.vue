@@ -24,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, reactive, watch, watchEffect } from "vue"
+import { ref, computed, reactive, watch, watchEffect, getCurrentInstance } from "vue"
 
 const count = ref(0)
 const obj = reactive({ count: 1 })
@@ -50,6 +50,9 @@ const changeTips = () => {
   tips.show = !tips.show
   tips.title = tips.show === true ? "隐藏" : "展示"
 }
+
+const token = getCurrentInstance()?.appContext.config.globalProperties.$token
+console.log(`token值`, token)
 
 const updateCount = () => {
   count.value += 1
